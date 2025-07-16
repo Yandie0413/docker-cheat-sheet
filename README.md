@@ -89,7 +89,7 @@ services:
   docker system prune
 
 ---
-## 💎  Résumé rapide
+##  Résumé rapide
 
 - Docker = plateforme de conteneurisation  
 - Image = recette  
