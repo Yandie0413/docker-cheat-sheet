@@ -49,27 +49,27 @@ docker container prune        # Supprime les conteneurs arrêtés
 ````
 ---
 ## Volumes
-
+```bash
 docker volume create mon_volume  
 docker run -v mon_volume:/data image  
 docker volume ls  
 docker volume rm mon_volume  
-
+```
 ----
 
 ## Dockerfile minimal
-
+````bash
 FROM python:3.10  
 WORKDIR /app  
 COPY . .  
 RUN pip install -r requirements.txt  
 CMD ["python", "app.py"]  
 
-
+````
 -----
 
 ## Docker Compose de base
-
+```bash
 version: "3.8"  
 services:  
   web:  
@@ -79,7 +79,8 @@ services:
   app:  
     build: .  
     volumes:  
-      - .:/app  
+      - .:/app
+````
 ---
 ## Bonnes pratiques
 
