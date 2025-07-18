@@ -1,3 +1,4 @@
+##PASSOT Armelle Yandie 157/L1A/24-25
 # Docker –
 
 ---
@@ -18,7 +19,7 @@ Un conteneur est une sorte de mini-ordinateur isolé, léger et portable.
 
 ## Commandes de base
 
-
+'''bash
 docker --version               # Vérifie l'installation
 docker pull nginx              # Télécharge une image
 docker run -d -p 8080:80 nginx # Lance un conteneur
@@ -40,12 +41,12 @@ docker rmi <image>            # Supprime une image
 4. Lance avec : docker run mon_app
 -----
 ## Images et conteneurs
-
+```bash
 docker images                 # Liste les images  
 docker ps -a                  # Liste tous les conteneurs  
 docker container prune        # Supprime les conteneurs arrêtés  
 
-
+````
 ---
 ## Volumes
 
