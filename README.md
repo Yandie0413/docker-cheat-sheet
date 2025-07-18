@@ -19,7 +19,7 @@ Un conteneur est une sorte de mini-ordinateur isolé, léger et portable.
 
 ## Commandes de base
 
-'''bash
+````bash
 docker --version               # Vérifie l'installation
 docker pull nginx              # Télécharge une image
 docker run -d -p 8080:80 nginx # Lance un conteneur
@@ -28,7 +28,7 @@ docker stop <nom/id>          # Stoppe un conteneur
 docker rm <nom/id>            # Supprime un conteneur
 docker rmi <image>            # Supprime une image
 
-
+````
 
 --
 ## Créer un conteneur personnalisé avec un Dockerfile
